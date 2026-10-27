@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartPark</string>
+    <string name="tagline">Find. Predict. Park.</string>
+    <string name="google_maps_key">AIzaSyDkc_tJdS4g7eh1qj-cTKlXk9fo05w48DI</string>
+
+    <!-- Bottom Nav Labels -->
+    <string name="nav_map">Map</string>
+    <string name="nav_list">List</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Auth -->
+    <string name="login_title">Log In</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="guest_button">Continue as Guest</string>
+    <string name="no_account">Don\'t have an account? Sign up</string>
+    <string name="have_account">Already have an account? Log in</string>
+    <string name="name_hint">Full Name</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="city_prompt">Select Preferred City</string>
+    <string name="terms_check">I agree to Terms &amp; Conditions</string>
+
+    <!-- Map Screen -->
+    <string name="search_hint">Search parking or destination...</string>
+    <string name="filter_nearby">Nearby</string>
+    <string name="filter_cheapest">Cheapest</string>
+    <string name="filter_open">Open now</string>
+    <string name="filter_ev">EV Charging</string>
+
+    <!-- Details Screen -->
+    <string name="btn_ai_whatif">AI What-If Predictor</string>
+    <string name="btn_navigate">Navigate</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_saved">Saved ✓</string>
+    <string name="fee_calculator">Parking Fee Calculator</string>
+    <string name="report_issue">Report Wrong Info / Status</string>
+
+    <!-- Predictor Screen -->
+    <string name="predictor_title">AI Parking Predictor</string>
+    <string name="whatif_title">What-If Simulation</string>
+    <string name="chip_later">Arrive 30 min later</string>
+    <string name="chip_cheaper">Find me cheaper parking</string>
+    <string name="chip_walk_limit">Max 5 min walk</string>
+    <string name="max_walk_time">Max Walking Time: %1$d min</string>
+    <string name="alternatives_title">Alternative Parking Lots</string>
+
+    <!-- Saved & History -->
+    <string name="tab_favourites">Favourites</string>
+    <string name="tab_history">History</string>
+    <string name="btn_export_csv">Export CSV</string>
+    <string name="btn_import_csv">Import CSV</string>
+
+    <!-- Report Screen -->
+    <string name="report_title">Report Parking Status</string>
+    <string name="btn_camera">Take Photo</string>
+    <string name="btn_gallery">Choose from Gallery</string>
+    <string name="attach_location">Attach my current location</string>
+    <string name="submit_report">Submit Report</string>
+
+    <!-- Settings & Profile -->
+    <string name="profile_title">Profile &amp; Settings</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="notifications">Busy Period Alerts</string>
+    <string name="airplane_alert">Airplane Mode Alert</string>
+    <string name="offline_cache">Offline Map Cache</string>
+    <string name="help_faq">Help &amp; FAQ</string>
+    <string name="about_app">About SmartPark</string>
+    <string name="logout">Log Out</string>
+</resources>

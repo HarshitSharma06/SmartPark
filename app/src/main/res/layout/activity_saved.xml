@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_saved"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="Saved &amp; History"
+        app:titleTextColor="@color/on_primary" />
+
+    <!-- Tabs Toggle Bar -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_saved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_saved"
+        android:background="@color/surface"
+        app:tabIndicatorColor="@color/primary"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextColor="@color/text_muted">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_favourites" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_history" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- CSV Buttons Action Bar -->
+    <LinearLayout
+        android:id="@+id/layout_csv_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_layout_saved"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_export_csv"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="@string/btn_export_csv"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_import_csv"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/btn_import_csv"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_empty_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No saved favourites yet"
+        android:textColor="@color/text_muted"
+        android:visibility="gone" />
+
+    <!-- Saved ListView -->
+    <ListView
+        android:id="@+id/list_view_saved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/layout_csv_actions"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <!-- Shared Bottom Navigation -->
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/layout_bottom_nav" />
+
+</RelativeLayout>
